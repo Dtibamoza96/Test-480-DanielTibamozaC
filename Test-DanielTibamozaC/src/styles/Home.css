@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home-page-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+}
+
+.language-container {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  z-index: 10;
+}
+
+.background-image-home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  filter: blur(4px);
+}
+
+.home-message-container {
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 450px;
+  height: 100%;
+  filter: brightness(80%);
+  animation: home-animation 0.5s forwards;
+  font-family: MagnisaSansRegularOtf;
+  gap: 10px;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 50px 55px rgb(255, 255, 255, 0.9);
+}
+
+@keyframes home-animation {
+  0% { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+.first-m, .second-m, .third-m {
+  display: flex;
+  position: relative;
+  animation: home-animation 0.3s backwards;
+  padding: 5px;
+  width: 280px;
+  height: 50px;
+  background-color: rgba(98, 133, 214, 0.7);
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.second-m {
+  background-color: rgba(66, 169, 54, 0.7);
+  animation-delay: 0.3s;
+}
+
+.third-m {
+  background-color: rgba(206, 196, 52, 0.7);
+  animation-delay: 0.5s;
+}
+
+.messages_home {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.messages_home:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+  filter: brightness(100%);
+  color: rgb(241, 241, 241);
+}
+
+.h-submit {
+  display: flex;
+  margin-top: 80px;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  font-family: MagnisaSansRegularOtf;
+  font-weight: bold;
+  font-size: larger;
+  letter-spacing: 2px;
+  color: black;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.h-submit:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+  filter: brightness(100%);
+  background-color: rgb(124, 124, 124);
+}

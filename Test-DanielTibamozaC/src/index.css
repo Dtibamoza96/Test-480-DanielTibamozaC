@@ -1,0 +1,21 @@
+@font-face {
+  font-family: MagnisaSansItalicOtf;
+  src: url("./assets/MagnisaSans-Italic.otf");
+}
+
+@font-face {
+  font-family: MagnisaSansItalicTtf;
+  src: url("./assets/MagnisaSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: MagnisaSansRegularOtf;
+  src: url("./assets/MagnisaSans-Regular.otf");
+}
+
+@font-face {
+  font-family:MagnisaSansRegularTtf;
+  src: url("./assets/MagnisaSans-Regular.ttf");
+}
+
+

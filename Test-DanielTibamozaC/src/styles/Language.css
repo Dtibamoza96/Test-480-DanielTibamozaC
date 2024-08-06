@@ -1,0 +1,35 @@
+.language-switcher {
+    display: flex;
+    justify-content:start;
+    align-items: end;
+    text-align: right;
+    gap: 10px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: MagnisaSansRegularOtf;
+  }
+  
+  .language-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+;
+  }
+  
+  .language-button.selected {
+    background-color: rgb(85, 85, 85, 0.8);
+    color: white;
+    border: 1px solid rgb(85, 85, 85, 0.8);
+
+  }
+  
+  .language-button:hover {
+    background-color: #e0e0e0;
+  }
+  

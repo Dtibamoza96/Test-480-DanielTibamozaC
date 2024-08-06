@@ -1,0 +1,122 @@
+/* Reseteo global de padding y margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Asegura que padding y border no afecten el ancho total */
+  }
+  
+  /* Fondo con imagen desenfocada */
+  .background-image-home {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    filter: blur(4px);
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    z-index: -1; /* Envía la imagen al fondo */
+  }
+  
+  /* Contenedor principal de login */
+  .login-users-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'MagnisaSansRegularOtf', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Estilo del contenedor de usuario */
+  .login-users {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 50px 55px rgba(255, 255, 255, 0.9);
+    position: relative;
+  }
+  
+  /* Estilo del formulario de login */
+  .form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 620px;
+    padding: 20px; /* Añadido padding para mejorar el espaciado interno */
+    border-radius: 15px;
+    background-color: rgba(66, 169, 54, 0.3);
+    box-shadow: 0 0 15px 15px rgba(66, 169, 54, 0.3);
+    margin-bottom: 60px;
+  }
+  
+  /* Estilos generales para inputs y selects */
+  .i-name,
+  .i-lastName,
+  .i-birthDate,
+  .s-genre,
+  .i-password,
+  .i-email {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2.5px solid rgba(66, 169, 54, 0.7);
+    padding: 10px;
+    font-family: 'MagnisaSansRegularOtf', sans-serif;
+    width: 280px;
+    font-size: larger;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  
+  /* Estilo para el contenedor de la contraseña */
+  .password {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  /* Estilo del botón de submit */
+  .l-submit {
+    background-color: rgba(206, 196, 52, 0.7);
+    border: none;
+    border-bottom: 2.5px solid rgba(175, 166, 43, 0.7);
+    border-right: 2.5px solid rgba(175, 166, 43, 0.7);
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-family: 'MagnisaSansRegularOtf', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px 0; /* Simplificado margin-top y margin-bottom */
+    transition: transform 0.3s ease; /* Aplicar transición solo al hover */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color:black;
+    text-decoration: none;
+  }
+  
+  .l-submit:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilo del título del login */
+  .title-login {
+    margin-top: 40px;
+    background-color: rgba(98, 133, 214, 0.7);
+    padding: 15px;
+    border: 2px solid rgba(98, 133, 214);
+  }
+  
