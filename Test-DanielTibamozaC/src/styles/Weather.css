@@ -76,6 +76,34 @@
     border-radius: 3px;
     padding: 8px 15px;
   }
+
+  .contact-button{
+    margin: 10px 0;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: MagnisaSansRegularOtf;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .contact-button:hover{
+    transform: scale(1.05);
+    background-color: lightgray;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    padding: 8px 15px;
+    font-family: MagnisaSansRegularOtf;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 1px;
+    border-radius: 5px;
+
+  }
   
   .weather-content {
     display: flex;

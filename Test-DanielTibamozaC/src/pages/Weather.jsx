@@ -4,6 +4,7 @@ import "../styles/Weather.css";
 import backgroundimagehome from "../assets/fondo_home.jpg";
 import Language from "../components/Language";
 import { useLanguage } from "../data/LanguageContext";
+import { Link } from "react-router-dom"; // Importa el componente Link
 
 const API_KEY = "b5da7bdef55cef5ed31a1a403656e873";
 const CITIES = {
@@ -104,6 +105,9 @@ const Weather = () => {
               </li>
             ))}
           </ul>
+          <Link to="/login">
+            <button className="contact-button">{translations.contact || "Contacto"}</button>
+          </Link>
         </div>
         <div className="weather-content">
           <h1 className="title-weather">

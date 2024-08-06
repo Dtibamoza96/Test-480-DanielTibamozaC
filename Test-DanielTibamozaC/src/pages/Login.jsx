@@ -22,6 +22,11 @@ const validateName = (name) => {
   return regex.test(name);
 };
 
+const validateMobile = (mobile) => {
+  const regex = /^\d{10}$/; // Example for 10-digit mobile number
+  return regex.test(mobile);
+};
+
 const showAlert = (title, text, icon) => {
   return Swal.fire({
     title,
@@ -39,6 +44,7 @@ const Login = () => {
     sexo: "",
     email: "",
     password: "",
+    mobile: "",
   });
   const [errors, setErrors] = useState([]);
   const [showPassword, setShowPassword] = useState(false);
@@ -74,6 +80,7 @@ const Login = () => {
       sexo: translations.gender,
       email: translations.email,
       password: translations.password,
+      mobile: translations.mobile,
     };
 
     for (const field in fields) {
@@ -84,14 +91,13 @@ const Login = () => {
 
     if (formData.password && !validatePassword(formData.password)) {
       newErrors.push(translations.password);
-      showAlert(
-        "Weather Web",
-        translations.passwordError,
-        "error"
-      );
+      showAlert("Weather Web", translations.passwordError, "error");
     } else if (formData.fechaNacimiento && !validateDateOfBirth(formData.fechaNacimiento)) {
       newErrors.push(translations.birthdate);
       showAlert("Weather Web", translations.errorDate, "warning");
+    } else if (formData.mobile && !validateMobile(formData.mobile)) {
+      newErrors.push(translations.mobile);
+      showAlert("Weather Web", translations.errorMobile, "warning");
     } else if (newErrors.length > 0) {
       setErrors(newErrors);
       showAlert("Weather Web", `${translations.missingFields} ${newErrors.join(", ")}`, "warning");
@@ -110,6 +116,7 @@ const Login = () => {
         sexo: "",
         email: "",
         password: "",
+        mobile: "",
       });
     }
   };
@@ -181,6 +188,16 @@ const Login = () => {
                 type="email"
                 name="email"
                 value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="mobile">
+              <label>{translations.mobile}:</label>
+              <input
+                className="i-mobile"
+                type="tel"
+                name="mobile"
+                value={formData.mobile}
                 onChange={handleChange}
               />
             </div>

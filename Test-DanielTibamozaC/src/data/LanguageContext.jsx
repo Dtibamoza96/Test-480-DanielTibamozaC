@@ -40,7 +40,11 @@ const translations = {
     locale: "en-US",
     daysOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     monthsOfYear: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-    passwordError: "The password must be 8 to 20 characters long, including uppercase letters (A-Z), lowercase letters (a-z), numbers (0-9), and special characters (! \" # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \\ ] ^ _ { | } ~)."
+    passwordError: "The password must be 8 to 20 characters long, including uppercase letters (A-Z), lowercase letters (a-z), numbers (0-9), and special characters (! \" # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \\ ] ^ _ { | } ~).",
+    contact: "Contact",
+    mobile: "Mobile",
+    errorMobile: "The mobile number must be 9-10 digits, only numbers "
+
   },
   es: {
     title: "Registro de Usuario",
@@ -79,7 +83,10 @@ const translations = {
     locale: "es-ES",
     daysOfWeek: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
     monthsOfYear: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-   passwordError: "La contraseña debe contener de 8 a 20 caracteres, incluyendo letras mayúsculas (A-Z), minúsculas (a-z), números (0-9) y caracteres especiales (! \" # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \\ ] ^ _ { | } ~)."
+   passwordError: "La contraseña debe contener de 8 a 20 caracteres, incluyendo letras mayúsculas (A-Z), minúsculas (a-z), números (0-9) y caracteres especiales (! \" # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \\ ] ^ _ { | } ~).",
+   contact: "Contacto",
+   mobile: "Telefono",
+   errorMobile: "El numero de telefono debe contener 9-10 digitos, solo numeros"
   },
 };
 
