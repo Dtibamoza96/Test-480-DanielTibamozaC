@@ -23,7 +23,7 @@ const validateName = (name) => {
 };
 
 const validateMobile = (mobile) => {
-  const regex = /^\d{10}$/; // Example for 10-digit mobile number
+  const regex = /^\d{9}$/; // Example for 10-digit mobile number
   return regex.test(mobile);
 };
 
