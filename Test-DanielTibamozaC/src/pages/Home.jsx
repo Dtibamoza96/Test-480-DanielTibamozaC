@@ -25,7 +25,6 @@ const Home = () => {
   const { playSound } = useSound();
   const { language } = useLanguage();
 
-  // Obtén las traducciones para el idioma actual
   const t = translations[language];
 
   return (
